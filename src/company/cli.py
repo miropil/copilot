@@ -59,7 +59,7 @@ def run(team_file, task):
     # create or get team
     t = session.query(Team).filter_by(name=team_name).first()
     if not t:
-        t = Team(name=team_name, metadata={})
+        t = Team(name=team_name, metadata_json={})
         session.add(t)
         session.commit()
     run_id = str(uuid.uuid4())

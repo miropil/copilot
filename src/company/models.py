@@ -10,7 +10,7 @@ class Team(Base):
     __tablename__ = "teams"
     id = Column(Integer, primary_key=True)
     name = Column(String, unique=True, nullable=False)
-    metadata = Column(JSON, nullable=True)
+    metadata_json = Column(JSON, nullable=True)
 
 class Agent(Base):
     __tablename__ = "agents"
@@ -57,7 +57,7 @@ class Evidence(Base):
     id = Column(Integer, primary_key=True)
     action_id = Column(Integer, ForeignKey("actions.id"))
     uri = Column(String, nullable=False)
-    metadata = Column(JSON, nullable=True)
+    metadata_json = Column(JSON, nullable=True)
     ts = Column(DateTime, default=datetime.datetime.utcnow)
 
 class RealitySnapshot(Base):
