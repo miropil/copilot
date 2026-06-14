@@ -1,4 +1,4 @@
-name: from-plugin-test
+name: smoke-team
 teams:
 - agents:
   - capabilities:
@@ -13,7 +13,7 @@ teams:
     - executor
     name: bob
     role: peer
-  id: from-plugin-test-1
+  id: smoke-team-1
   policies:
     auto_approve_risk: low
     ensemble_required_risk: high
