@@ -1,0 +1,2 @@
+[console_scripts]
+copilot-company = company.cli:cli

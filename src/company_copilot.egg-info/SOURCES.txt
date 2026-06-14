@@ -1,0 +1,16 @@
+LICENSE
+README.md
+README_COMPANY.md
+pyproject.toml
+src/company/__init__.py
+src/company/cli.py
+src/company/db.py
+src/company/models.py
+src/company/provenance.py
+src/company_copilot.egg-info/PKG-INFO
+src/company_copilot.egg-info/SOURCES.txt
+src/company_copilot.egg-info/dependency_links.txt
+src/company_copilot.egg-info/entry_points.txt
+src/company_copilot.egg-info/requires.txt
+src/company_copilot.egg-info/top_level.txt
+tests/test_smoke_cli.py

@@ -1,18 +1,24 @@
-name: telemetry-team
+name: from-plugin-test
 teams:
-  - id: telemetry-team-1
-    agents:
-      - name: alice
-        role: primary
-        capabilities: [planner, researcher, executor]
-      - name: bob
-        role: peer
-        capabilities: [researcher, verifier, executor]
-    specialists:
-      - name: retriever-vec
-        type: retriever
-        promotable_to_mcp: true
-    policies:
-      auto_approve_risk: low
-      peer_required_risk: medium
-      ensemble_required_risk: high
+- agents:
+  - capabilities:
+    - planner
+    - researcher
+    - executor
+    name: alice
+    role: primary
+  - capabilities:
+    - researcher
+    - verifier
+    - executor
+    name: bob
+    role: peer
+  id: from-plugin-test-1
+  policies:
+    auto_approve_risk: low
+    ensemble_required_risk: high
+    peer_required_risk: medium
+  specialists:
+  - name: retriever-vec
+    promotable_to_mcp: true
+    type: retriever
