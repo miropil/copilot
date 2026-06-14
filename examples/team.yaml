@@ -1,0 +1,18 @@
+name: telemetry-team
+teams:
+  - id: telemetry-team-1
+    agents:
+      - name: alice
+        role: primary
+        capabilities: [planner, researcher, executor]
+      - name: bob
+        role: peer
+        capabilities: [researcher, verifier, executor]
+    specialists:
+      - name: retriever-vec
+        type: retriever
+        promotable_to_mcp: true
+    policies:
+      auto_approve_risk: low
+      peer_required_risk: medium
+      ensemble_required_risk: high

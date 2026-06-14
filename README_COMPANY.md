@@ -1,0 +1,17 @@
+Company — Copilot-CLI friendly multi-agent team framework (prototype)
+
+Quickstart (dev):
+
+1. Run the CLI (module mode):
+   python -m company.cli init --team telemetry-team
+2. Initialize vData DB:
+   python -m company.cli initdb
+3. Start a demo run:
+   python -m company.cli run --task "Summarize this repo"
+4. Check status:
+   python -m company.cli status
+
+Notes:
+- vData: SQLite is used by default at .company_vdata.db. Production deploy should use PostgreSQL (jsonb, pgvector) and proper backups.
+- team templates are stored in examples/team.yaml
+- This is a minimal scaffold for the Company prototype (pair-first teams, provenance, reality role planned)."}
