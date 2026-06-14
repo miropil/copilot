@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Plugin shim for Copilot CLI - Company framework (Unix)
+REPO_DIR="$(cd "$(dirname "$0")" && pwd)"
+export PYTHONPATH="$REPO_DIR/src"
+exec python -m company.cli "$@"
