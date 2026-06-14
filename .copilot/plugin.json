@@ -6,8 +6,7 @@
   "author": {"name": "Copilot", "email": "223556219+Copilot@users.noreply.github.com"},
   "homepage": "https://github.com/miropil/copilot",
   "repository": {"type": "git", "url": "https://github.com/miropil/copilot.git"},
-  "commands": [{"name":"company","usage":"/company <subcommand>","description":"Company plugin entrypoint. Subcommands: init, run, status, review, promote, test, initdb.","executable":"copilot-company","args":["<subcommand>"]}],
-  "permissions": ["filesystem:read","filesystem:write","network:outbound","run:process","env:read"],
+  "commands": [{"name":"company","usage":"/company <subcommand>","description":"Company plugin entrypoint. Subcommands: init, run, status, review, promote, test, initdb.","executable":"copilot-company"}],  "permissions": ["filesystem:read","filesystem:write","network:outbound","run:process","env:read"],
   "manifest_schema_version": "1.0",
   "notes": "This manifest makes the plugin discoverable by Copilot CLI plugin tooling. To publish to the marketplace, submit this repo and a packaged release per marketplace instructions."
 }
